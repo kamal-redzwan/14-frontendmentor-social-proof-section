@@ -75,6 +75,11 @@ body {
   margin-block-end: 1rem;
 }
 
+.rated p {
+  font-weight: var(--fw-bold);
+  color: var(--clr-very-dark-magenta);
+}
+
 .testimonials {
   display: grid;
   gap: 1rem;
@@ -129,10 +134,12 @@ body {
 
   .heading-stars {
     display: grid;
-    grid-template-columns: 445px 540px;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
-    justify-items: center;
+    justify-items: start;
     margin-block-end: 4.3rem;
+
+    gap: 8rem;
   }
 
   .heading {
@@ -155,8 +162,9 @@ body {
     align-items: center;
     gap: 2rem;
 
-    max-width: 445px;
-    padding-left: 2rem;
+    width: 445px;
+    padding-block: 1.5rem;
+    padding-inline: 2.5rem;
   }
 
   .stars-rated:nth-child(2) {
